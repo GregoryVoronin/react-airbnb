@@ -1,0 +1,20 @@
+.title__main-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 20px;
+}
+.title__sub {
+    display: flex;
+    column-gap: 16px;
+}
+.title__sub-item:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;    
+}
