@@ -1,5 +1,6 @@
 import './index.css'
 import Box from '../box'
+import ListItem from '../list-item'
 
 export default function Price({
     old_price,
@@ -7,7 +8,7 @@ export default function Price({
     currency,
     ...rest
 }) {
-    return <Box className={'price'} isShadow>
+    return <Box className={'price'}>
         <div className={`price__block ${old_price ? 'sale' : ''}`}>
             {old_price && <span>{old_price}{currency}</span>} {price}{currency}
         </div>
@@ -22,18 +23,18 @@ function List({
     checkin,
     checkout
 }) {
-    return <ul className='price__list'>
-        <li className='price__list-item'>
+    return <ul className='list price__list'>
+        <ListItem>
             Плата за прибирання:<span>{currency}{cleaning}</span>
-        </li>
-        <li className='price__list-item'>
+        </ListItem>
+        <ListItem>
             Сервісний збір:<span>{currency}{service}</span>
-        </li>
-        <li className='price__list-item'>
+        </ListItem>
+        <ListItem>
             Дата прибуття:<span>{checkin}</span>
-        </li>
-        <li className='price__list-item'>
+        </ListItem>
+        <ListItem>
             Дата від’їзду:<span>{checkout}</span>
-        </li>
+        </ListItem>
     </ul>
 }

@@ -1,0 +1,12 @@
+.contact__wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+.contact__wrapper img {
+    border-radius: 50%;
+}
+.contact__info .heading {
+    padding: 0;
+    margin-bottom: 26px;
+}

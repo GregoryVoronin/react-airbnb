@@ -1,0 +1,22 @@
+.review__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.review__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.review__item-title {
+    display: flex;
+    justify-content: space-between;
+}
+.review__author {
+    font-weight: 600;
+}
+.review__item-info {
+    text-align: justify;
+    line-height: 1.5;
+}

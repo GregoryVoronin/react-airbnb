@@ -3,6 +3,15 @@ import Header from "./component/header";
 import Title from "./component/title";
 import Banner from "./component/banner";
 import Price from "./component/price";
+import RoomTypes from "./component/room-types";
+import Description from "./component/description";
+import Details from "./component/details";
+import Amenities from "./component/amenities";
+import Contact from "./component/contact";
+import Additional from "./component/additional";
+import Reviews from "./component/reviews"
+import Attractions from "./component/attractions";
+
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
@@ -169,6 +178,22 @@ function App() {
       checkin={data.availability.checkin_date}
       checkout={data.availability.checkout_date}
     />
+    <RoomTypes title='Типи номерів' items={data.roomTypes} />
+    <Description title='Опис'>{data.description}</Description>
+    <Details title='Деталі властивості' items={data.property_details} />
+    <Description title='Про сусідів'>{data.neighborhood_info}</Description>
+    <Amenities title='Зручності' items={data.amenities} />
+    <Contact 
+      name={data.contact_info.name}
+      image={data.contact_info.image}
+      response_rate={data.contact_info.response_rate}
+      response_time={data.contact_info.response_time}
+      info={data.contact_info.info}
+      phone={data.contact_info.phone}
+    />
+    <Additional title='Додаткові властивості' items={data.additional_properties}/>
+    <Reviews title='Відгуки клієнтів' items={data.guestReviews} />
+    <Attractions title="Пам'ятки поблизу" items={data.nearbyAttractions}/>
   </Page>
 }
 

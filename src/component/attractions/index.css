@@ -1,0 +1,6 @@
+.attractions__list {
+    row-gap: 24px;
+}
+.attractions__list .list-item a {
+    color: #000;
+}

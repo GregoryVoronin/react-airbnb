@@ -1,0 +1,9 @@
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+}
+.heading-border {
+    border-bottom: 1px solid #DEE2E6
+}
